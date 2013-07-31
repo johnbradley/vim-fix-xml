@@ -13,7 +13,3 @@ then simply copy and paste:
 
     cd ~/.vim/bundle
     git clone git://github.com/johnbradley/vim-fix-xml.git
-
-## License
-
-Copyright © John Bradley.
