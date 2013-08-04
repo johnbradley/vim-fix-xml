@@ -7,11 +7,12 @@ This requires xmllint to be installed and in your $PATH.
 
 ## Installation
 
-from the command line run the following:
-
+From the command line run the following:
+```
+mkdir -p ~/.vim/plugin
 cd ~/.vim/plugin
-wget http://raw.github.com/johnbradley/vim-fix-xml/master/fix-xml.vim  --no-check-certificate
-put fix-xml.vimo
+wget http://raw.github.com/johnbradley/vim-fix-xml/master/fix-xml.vim --no-check-certificate
+```
 
 then add th following to ~/.vimrc:
 :command FX :call FixXML()
