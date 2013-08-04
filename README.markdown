@@ -15,4 +15,6 @@ wget http://raw.github.com/johnbradley/vim-fix-xml/master/fix-xml.vim --no-check
 ```
 
 then add th following to ~/.vimrc:
+```
 :command FX :call FixXML()
+```
