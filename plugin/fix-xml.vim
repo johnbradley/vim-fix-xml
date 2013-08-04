@@ -4,9 +4,10 @@
 
 function FixXML()
   "save and run xmllint on our file saving output
-  w!
+  let tempfile = tempname()
+  exec "sav! " . tempfile
   let outfile = tempname()
-  let result = system("xmllint --format " . @% . ">" . outfile . "; echo -n $?")
+  let result = system("xmllint --format " . tempfile . ">" . outfile . "; echo -n $?")
   if result == "0" 
 	 "delete everything
      1,$delete
@@ -16,7 +17,8 @@ function FixXML()
 	 1,1delete
 	 redraw!
   else
-     echo result
+     let clean_result = substitute(result, tempfile, "Error", '')
+     echo clean_result
   endif
 endfunction
 
