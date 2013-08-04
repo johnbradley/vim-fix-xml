@@ -7,9 +7,11 @@ This requires xmllint to be installed and in your $PATH.
 
 ## Installation
 
-If you don't have a preferred installation method, I recommend
-installing [pathogen.vim](https://github.com/tpope/vim-pathogen), and
-then simply copy and paste:
+from the command line run the following:
 
-    cd ~/.vim/bundle
-    git clone git://github.com/johnbradley/vim-fix-xml.git
+cd ~/.vim/plugin
+wget http://raw.github.com/johnbradley/vim-fix-xml/master/fix-xml.vim  --no-check-certificate
+put fix-xml.vimo
+
+then add th following to ~/.vimrc:
+:command FX :call FixXML()

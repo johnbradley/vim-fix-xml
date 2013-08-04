@@ -22,4 +22,3 @@ function FixXML()
   endif
 endfunction
 
-:command FX :call FixXML()
