@@ -1,4 +1,5 @@
 " fix-xml.vim - saves current document and fixes it's xml
+" https://github.com/johnbradley/vim-fix-xml
 " Maintainer:   John Bradley
 " Version:      1.0
 
@@ -17,7 +18,7 @@ function FixXML()
 	 1,1delete
 	 redraw!
   else
-     let clean_result = substitute(result, tempfile, "Error", '')
+     let clean_result = substitute(result, tempfile, "Error", 'g')
      echo clean_result
   endif
 endfunction
